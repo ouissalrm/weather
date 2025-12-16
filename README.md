@@ -5,7 +5,7 @@ It shows the current weather for Casablanca using the **OpenWeather API**, and s
 
 ---
 ## Link
-weather-app-wissal.netlify.app
+https://weather-app-wissal.netlify.app/
 ---
 
 ## Features
