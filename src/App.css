@@ -1,12 +1,104 @@
-
 @font-face {
   font-family: Aa;
   src: url("../public/fonts/Amiri-Bold.ttf");
 }
-h1{
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+h1 {
   font-family: "Aa";
 }
-body{
-  background:rgb(18, 75, 160);
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.weather-card {
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.city-time {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.weather-card hr {
+  margin: 16px 0;
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+}
+
+.weather-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.temp-description {
+  text-align: center;
+  opacity: 0.9;
+}
+
+.temp-minmax {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0.85;
+}
+
+.cloud-icon {
+  font-size: 180px !important;
+  opacity: 0.35;
+}
+
+.lang-switch {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lang-switch button {
+  color: white !important;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .weather-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cloud-icon {
+    font-size: 120px !important;
+  }
 }
